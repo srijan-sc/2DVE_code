@@ -1,0 +1,10 @@
+# macOS
+.DS_Store
+
+# MATLAB figure/output files
+*.fig
+*.png
+*.svg
+
+# Large data files (keep .csv since they're input data)
+*.mat

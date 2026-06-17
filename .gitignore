@@ -6,5 +6,9 @@
 *.png
 *.svg
 
-# Large data files (keep .csv since they're input data)
+# Large data files
 *.mat
+
+# Separate git repos nested here
+ChemPhys/
+tIR/tIR/V5/
