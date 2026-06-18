@@ -187,11 +187,11 @@ if plot_ftir_fig
     ax_ftir = axes('Parent', fig_ftir, 'Color', 'w');
     hold(ax_ftir, 'on');
 
-    % Gradient fill 2500–3000: soft blue at top → white at baseline
+    % Gradient fill 2500–3000: sage green at top → white at baseline (pump colour)
     m  = fx >= 2500 & fx <= 3000;
     xr = fx(m);  yr = fy(m);  n = numel(xr);
-    p  = patch(ax_ftir, [xr fliplr(xr)], [yr zeros(1,n)], 'b', 'HandleVisibility', 'off');
-    p.FaceVertexCData = [repmat([0.55 0.76 0.94], n, 1); repmat([1 1 1], n, 1)];
+    p  = patch(ax_ftir, [xr fliplr(xr)], [yr zeros(1,n)], 'g', 'HandleVisibility', 'off');
+    p.FaceVertexCData = [repmat([0.62 0.82 0.64], n, 1); repmat([1 1 1], n, 1)];
     p.FaceColor = 'interp';
     p.EdgeColor = 'none';
 
